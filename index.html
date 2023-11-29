@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DojoWather</h1>
+        <div>
+            <p onclick="DojoWather()">Burbank</p>
+            <p onclick="DojoWather()">Chicaga</p>
+            <p onclick="DojoWather()">Dallas</p>
+        </div>
+    </header>
+    <section>
+        <h2>San Jose</h2>
+        <div>
+            <label for="temperature"><strong>show temperature in</strong></label>
+            <select id="temperature" name="temperature" onchange="convertirTemperatura()">
+                <option value="Celcius">°C</option>
+                <option value="Fahrenheit">°F</option>
+            </select>        
+        </div>
+    </section>
+    <main>
+        <div class="colum1">
+            <h3>Today</h3>
+            <img src="./assets/some_rain.png" alt="some_rain">
+            <h4>Some rain</h4>
+            <div>
+                <p class="temperatura">24°</p>
+                <p class="temperatura">18°</p>
+            </div>
+        </div>
+        <div class="colum2">
+            <h3>Tomorrow</h3>
+            <img src="./assets/some_sun.png" alt="some_sun">
+            <h4>Some sun</h4>
+            <div>
+                <p class="temperatura">27°</p>
+                <p class="temperatura">19°</p>
+            </div>
+        </div>
+        <div class="colum3">
+            <h3>Friday</h3>
+            <img src="./assets/some_clouds.png" alt="some_clouds">
+            <h4>Some clouds</h4>
+            <div>
+                <p class="temperatura">21°</p>
+                <p class="temperatura">16°</p>
+            </div>
+        </div>
+        <div class="colum4">
+            <h3>Saturday</h3>
+            <img src="./assets/some_sun.png" alt="some_sun">
+            <h4>Some sun</h4>
+            <div>
+                <p class="temperatura">26°</p>
+                <p class="temperatura">21°</p>
+            </div>
+        </div>
+    </main>
+    <aside id="cookie">
+        <div>
+            <img src="./assets/cookie.png" alt="cookie">
+            <div>
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize 
+                    content and ads, to provide social media feactures and to
+                    analyse our traffic. <a href="">Readd more...</a>
+                </p>
+            </div>
+            <button onclick="aceptarCookies()">Aceptar</button>
+            </div>
+        </aside>
+    <script src="script.js"></script>
+</body>
+</html>

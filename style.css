@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: dodgerblue;
+    justify-content: space-around;
+    align-items: center;
+}
+header > div{
+    display: flex;
+    gap: 20px;
+    font: bold 15px 'Roboto', sans-serif;
+
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68%;
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+main{
+    display: flex;
+    width: 68%;
+    height: 300px;
+    gap: 30px;
+    counter-reset: none;
+    margin-top: 20px;
+}
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+main > div > div {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+main>div>img{
+    width: 100px;
+    border-radius: 50%;
+}
+main > div >div > p{
+    font: bold 20px 'Roboto', sans-serif;
+}
+
+.colum1, .colum2, .colum3, .colum4{
+    flex: 2;
+    background-color: rgb(209, 203, 203);
+    
+}
+
+aside {
+    width: 65%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    margin: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+aside > div{
+    display: flex;
+    height: 200px;
+    gap: 50px;
+    align-items: center;
+    margin: 10px;
+}
+aside > div > button{
+    width: 200px;    
+    height: 30px;
+    box-shadow: 2px 4px 0px 0px;
+    background-color: skyblue;
+}
+main > div > div p:first-child {
+    color: red;
+}
+main > div > div p:last-child {
+    color: blue;
+}
